@@ -56,7 +56,13 @@ namespace YazilimDeneme
             this.Controls.Add(homeLabel);
         }
 
-        
+        private void EnterButton_Click(object sender, EventArgs e)
+        {
+            // Giriş Yap butonuna tıklandığında
+            welcomeLabel.Visible = false;
+            enterButton.Visible = false;
+            homeLabel.Visible = true;
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
